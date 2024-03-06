@@ -1,0 +1,375 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+
+    /*font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+}
+
+.row{
+    width: 100%;
+
+}
+
+.row::after{
+    clear:both;
+    content: '';
+    display: block;
+}
+
+[class*="col-"]{
+    float: left;
+    padding:15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+/*header strts*/
+
+header{
+    background-color: rgb(67, 125, 66);
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color:yellow;
+    border: 4px solid red;
+    border-radius: 50%;
+
+
+}
+
+nav ul li{
+    display: block;
+    
+
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: azure;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    color: blue;
+
+}
+
+
+
+/*header ends*/
+
+/* bannaer starts */
+#banner-section{
+    background-image: url(images/banner.jpg);
+    background-attachment:fixed ;
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+
+}
+.banner-content{
+    padding: 50px 10px;
+    text-align: center;
+
+}
+.banner-content h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background-color:rgba(255,255,0,0.6) ;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+    transition: .3s;
+
+}
+.banner-content h1:hover{
+    font-size: 3rem;
+    background-color:rgb(255, 0, 0,0.6) ;
+    color: rgb(253, 245, 245);
+    border-radius: 50%;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+
+}
+.banner-content p{
+    width: 300px;
+    margin: 15px auto;
+    color:aliceblue;
+    background-color: rgb(19, 78, 13,0.5);
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+
+}
+.banner-content p:hover{
+    color:rgb(239, 248, 248);
+    background-color: rgba(246, 53, 19, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+
+
+}
+.btn{
+    width: 170px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    transition: 0.3s;
+
+}
+.btn:hover{
+    transform:scale(1.2);
+    color: blue;
+    text-decoration: underline;
+
+}
+
+
+
+
+/*banner  ends*/
+
+/* about-section start */
+#about-us{
+    padding: 1%;
+}
+.about-us-content{
+    text-align: center;
+}
+.about-us-content h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.about-us-content p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    
+}
+
+/* about-section end */
+
+/* food menu start */
+#menu-section{
+    padding: 1%;
+
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width:100% ;
+    height: auto;
+    display: block;
+
+}
+
+.item-desc{
+    background: rgb(165, 164, 164) ;
+    
+}
+.item-name{
+    background: yellowgreen;
+    padding: 10px;
+}
+.item-desc > p{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.card{
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* food menu ends */
+
+/* contact starts */
+#contact{
+    padding: 1%;
+    background-color:yellowgreen;
+}
+.contact-details{
+    color: black;
+    text-align: center;
+    padding: 20px 0px;
+}
+.map{
+    width: 100%;
+    height: 250px;
+
+}
+/* contact ends */
+/* footer starts */
+footer{
+    padding: 1%;
+    color: white;
+    background-color: rgb(7, 7, 73);
+}
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.social-menu{
+    text-align: center;
+}
+.icon-style{
+    color: rgb(231, 12, 12);
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.icon-style:hover{
+    transform: scale(1.2);
+    background-color: rgb(246, 233, 233)
+}
+
+/* footer ends */
+
+
+@media (min-width: 576px){
+
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+}
+
+@media (min-width: 768px){
+
+
+    
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+  @media (min-width: 992px){
+
+    .logo-div{
+        text-align: left;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+        transition: 0.3s;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        border-radius: none;
+        text-decoration: underline;
+        transform: scale(1.2);
+        font-weight: bold;
+        color: rgb(137, 244, 252);
+    }
+
+    #banner-section{
+        position: relative;
+        height: 100vh;
+    
+    }
+    .banner-content{
+       position: absolute;
+       top: 50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+    
+    }
+    .banner-content h1{
+        width: 700px;
+        font-size: 3.5rem;
+    
+    }
+    .banner-content p{
+        width: 500px;
+        font-size: 2rem;
+    
+    }
+    footer p{
+    
+        text-align: left;
+    }
+    .social-menu{
+        text-align: right;
+    }
+    .card-body img{
+        max-width:100% ;
+        height: 350px;
+        display: block;
+    
+    }
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
